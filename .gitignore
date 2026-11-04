@@ -1,0 +1,13 @@
+# ambiente virtual e cache do Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# dados de quem usa o sistema
+dados/
+
+# sistema operacional e editor
+.DS_Store
+Thumbs.db
+.vscode/
