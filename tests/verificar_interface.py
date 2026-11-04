@@ -140,6 +140,12 @@ class VerificacaoInterface:
         self.bug(Formato.moeda(destino.saldo) not in textos,
                  "B8: tela de Contas não atualiza depois da transferência")
 
+        # B11: ao editar uma conta com o nome vazio, o erro aparece, mas o limite já mudou
+        limite = principal.limite
+        erro = form(dlg.DialogoConta, {"nome": "", "extra": str(limite + 100)}, principal)
+        self.bug("nome da conta" in erro and principal.limite != limite,
+                 "B11: editar conta com nome vazio mostra o erro, mas altera o limite")
+
     def _rotulos(self, widget):
         for filho in widget.winfo_children():
             if type(filho).__name__ == "CTkLabel":

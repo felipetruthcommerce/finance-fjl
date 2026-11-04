@@ -19,8 +19,8 @@ Grupo: Felipe Machado Rodrigues, Jonathas Daniel Fontoura Rambor e Leonardo Kind
 | Resumo na tela Início | Tema escuro |
 | Salvamento automático em JSON | |
 
-A versão ainda tem bugs conhecidos, todos reproduzidos em `tests/test_bugs_conhecidos.py`. A lista
-está no [CHANGELOG](CHANGELOG.md).
+A versão ainda tem bugs conhecidos, todos reproduzidos nos testes da pasta `tests/`. A lista está no
+[CHANGELOG](CHANGELOG.md).
 
 ## Diferencial: saldo protegido
 

@@ -7,7 +7,7 @@ Versão publicada para a Etapa 3.
 **O que tem:** cadastro, contas corrente e poupança, receitas, despesas, transferência, rendimento
 da poupança, tela Início, extrato e salvamento em JSON.
 
-**Bugs conhecidos** (reproduzidos em `tests/test_bugs_conhecidos.py`; o B8 em
+**Bugs conhecidos** (reproduzidos em `tests/test_bugs_conhecidos.py`; o B8 e o B11 em
 `tests/verificar_interface.py`):
 
 | # | Bug |
@@ -22,3 +22,4 @@ da poupança, tela Início, extrato e salvamento em JSON.
 | B8 | Depois de transferir, a tela Contas só mostra o novo saldo ao trocar de tela. |
 | B9 | Arquivo JSON corrompido fecha o programa ao abrir, sem mensagem clara. |
 | B10 | Valor ou data inválidos mostram a mensagem técnica do Python, em inglês. |
+| B11 | Ao editar uma conta com o nome vazio, o erro aparece, mas o limite ou a taxa já mudou. |
